@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 🔥 ÖZEL CURSOR -->
+    <div class="cursor"></div>
+
+    <!-- HEADER -->
+    <header>
+        <button id="temabutonu">🌗 Mod</button>
+        <h1 id="daktilo"></h1>
+    </header>
+
+    <!-- HAKKIMDA -->
+    <section id="hakkimda">
+        <h2>Hakkımda</h2>
+        <p>
+            Gümüşhane Üniversitesi Bilgisayar Programcılığı 2. sınıf öğrencisiyim. 
+            Kariyer hedefim gömülü sistemler ve web teknolojilerini birleştirmektir.
+        </p>
+    </section>
+
+    <!-- YETENEKLER -->
+    <section id="yetenekler">
+        <h2>Yetenekler</h2>
+
+        <div class="beceri-alani">
+            <p>HTML / CSS</p>
+            <div class="cubuk"><div class="doluluk" data-deger="80"></div></div>
+        </div>
+
+        <div class="beceri-alani">
+            <p>JavaScript</p>
+            <div class="cubuk"><div class="doluluk" data-deger="70"></div></div>
+        </div>
+
+        <div class="beceri-alani">
+            <p>C#</p>
+            <div class="cubuk"><div class="doluluk" data-deger="65"></div></div>
+        </div>
+
+        <!-- 📚 DERSLER -->
+        <h3 class="ders-baslik">📚 Aldığım Dersler</h3>
+
+        <div class="dersler">
+            <div class="ders-karti">💻 Nesne Tabanlı Programlama</div>
+            <div class="ders-karti">🗄️ Veri Tabanı Sistemleri</div>
+            <div class="ders-karti">🎨 Görsel Programlama</div>
+            <div class="ders-karti">🌐 İnternet Programcılığı</div>
+            <div class="ders-karti">⚡ Devre Analizi</div>
+            <div class="ders-karti">🔢 Sayısal Tasarım</div>
+        </div>
+    </section>
+
+    <!-- PROJELER -->
+    <section id="projeler">
+        <h2>Projelerim</h2>
+
+        <div class="filtreler">
+            <button onclick="projelerifiltrele('hepsi')">Hepsi</button>
+            <button onclick="projelerifiltrele('web')">Web</button>
+            <button onclick="projelerifiltrele('mobil')">Mobil</button>
+        </div>
+
+        <div id="proje-listesi" class="galeri"></div>
+    </section>
+
+    <!-- 📩 İLETİŞİM (MODERN) -->
+    <section id="iletisim">
+        <h2>📩 İletişim</h2>
+
+        <div class="iletisim-kutu">
+
+            <!-- MAIL -->
+            <div class="iletisim-kart">
+                <div class="icon">📧</div>
+                <h3>E-posta</h3>
+                <p>Benimle iletişime geç</p>
+                <a href="mailto:yusufalkan2900@gmail.com">Mail Gönder</a>
+            </div>
+
+            <!-- GITHUB -->
+            <div class="iletisim-kart">
+                <div class="icon">🐙</div>
+                <h3>GitHub</h3>
+                <p>Projelerimi incele</p>
+                <a href="https://github.com/Yalkn029" target="_blank">GitHub’a Git</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Yusuf Ziya Alkan</p>
+        <a href="mailto:yusufalkan2900@gmail.com">yusufalkan2900@gmail.com</a> |
+        <a href="https://github.com/Yalkn029" target="_blank">GitHub</a>
+    </footer>
+
+    <!-- 🔥 POPUP -->
+    <div id="popup" class="popup">
+        <div class="popup-box">
+            <span onclick="popupkapat()" class="kapat">&times;</span>
+            <div id="popup-icerik"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
